@@ -13,15 +13,15 @@ public class Main {
         System.out.print("PointC: ");
         int pointC = userInput.nextInt();
 
-        Triange triange = new Triange(pointA, pointB, pointC);
+        Triangle triangle = new Triangle(pointA, pointB, pointC);
 
         System.out.print("Widen [y/n]: ");
         String answer = userInput.next();
 
         if (answer.equals("y") || answer.equals("Y")) {
-            triange.widen();
+            triangle.widen();
         }
 
-        System.out.println(triange);
+        System.out.println(triangle);
     }
 }
