@@ -1,13 +1,9 @@
-import java.awt.*;
-import java.lang.Math;
-
-public class Triange {
-
+public class Triangle {
     private int pointA;
     private int pointB;
     private int pointC;
 
-    public Triange(int pointA, int pointB, int pointC) {
+    public Triangle(int pointA, int pointB, int pointC) {
         this.pointA = pointA;
         this.pointB = pointB;
         this.pointC = pointC;
@@ -20,18 +16,14 @@ public class Triange {
     }
 
     public double surfaceArea() {
-        int perimeter = 1/2 * (this.pointA + this.pointB + this.pointC);
+        int base = this.pointB / 2;
 
-        int a = this.pointA;
-        int b = this.pointB;
-        int c = this.pointC;
-
-        double area = Math.sqrt(4 * a^2 * b^2 - (a^2 + b^2 - c^2)^2);
+        double area = 0.5 * (base) * (0.5 * base * Math.sqrt(3));
 
         return area;
     }
 
     public String toString() {
-        return "PointA: " + pointA + "\nPointB: " + pointB + "\nPointC: " + pointC;
+        return "PointA: " + pointA + "\nPointB: " + pointB + "\nPointC: " + pointC + "\nArea: " + surfaceArea();
     }
 }
