@@ -6,13 +6,13 @@
 
 ## Why use interfaces? 
 
-> It ensures all implementing classes have the required methods.
+> 1. It ensures all implementing classes have the required methods.
 > 
-> It gives you a cleaner and more organized code.
+> 2. It gives you a cleaner and more organized code.
 > 
-> Polymorphism, it lets you write code that works with any class that implements the interface.
+> 3. Polymorphism, it lets you write code that works with any class that implements the interface.
 > 
-> A class an implement multiple interfaces, giving it different abilities without messy inheritance.
+> 4. A class an implement multiple interfaces, giving it different abilities without messy inheritance.
 
 ## What can interfaces do?
 
