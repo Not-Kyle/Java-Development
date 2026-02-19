@@ -1,3 +1,5 @@
+//https://www.baeldung.com/a-guide-to-java-sockets#bd-Overview
+
 package net.mawborne;
 
 import org.apache.logging.log4j.LogManager;
