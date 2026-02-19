@@ -17,6 +17,7 @@ public class Client implements AutoCloseable {
         clientSocket = new Socket(ip, port);
         out = new PrintWriter(clientSocket.getOutputStream(), true);
         in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+        
         LOGGER.info("Connected to {}:{}", ip, port);
     }
 
@@ -28,8 +29,10 @@ public class Client implements AutoCloseable {
     @Override
     public void close() throws IOException {
         LOGGER.info("Closing connection...");
+        
         if (in != null) in.close();
         if (out != null) out.close();
         if (clientSocket != null) clientSocket.close();
     }
 }
+
